@@ -1,0 +1,228 @@
+#CV{
+  height: 900px;
+}
+
+.teste1{
+    left: 42%;
+    top: 10px;
+    width: 190px;
+    height: 367.25px;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.teste2{
+    left: 42%;
+    top: 372px;
+    width: 190px;
+    height: 367.25px;
+    z-index:-1;
+    position: absolute;
+    background-size: cover;
+    transform:  rotateX(-90deg) ;
+    transform-origin: top;
+    transition: all 0.5s linear;
+    transition-delay: 1.5s;
+    visibility: visible;
+    z-index: 5;
+}
+
+.teste3{
+    left: 42%;
+    top: 681px;
+    width: 190px;
+    height: 146.5px;
+    position: absolute;
+    background:url(novaImagem3.png);
+    background-size: cover;
+    z-index:-2;
+    transform:  rotateX(-90deg) ;
+    transform-origin: top;
+    transition: all 0.5s linear;
+    transition-delay: 1s;
+    z-index:4;
+}
+
+.dohover:hover ~ .teste2{
+    transform: perspective(1000px) rotateX(0deg);
+    visibility: visible;
+    transition-delay: 0s;
+    }
+
+.dohover:hover ~ .teste2 ~ .teste3{
+    
+    transform: perspective(800px) rotateX(0deg);
+    transition-delay: 0.5s;
+    visibility: visible;
+}
+
+.teste4{
+    top: 10px;
+    left: 28%;
+    width: 190px;
+    height: 756px;
+    z-index: -4;
+    position: absolute;
+    background: url(novaImagem4.png);
+    background-size: cover;
+    transform:  rotateY(180deg);
+    transition: all 0.8s linear;
+    transform-origin: right;
+    transition-delay: 0s;
+    z-index: 3;
+    visibility: hidden;
+}
+
+.dohover:hover ~ .teste2 ~ .teste3 ~ .teste4{
+    transform: perspective(800px) rotateX(0deg);
+    transition-delay: 1s;
+    visibility: visible;
+    left: 25%;
+}
+
+.teste5{
+    top:10px;
+    left: 59%;
+    width: 170px;
+    height: 756px;
+    z-index:-4;
+    position: absolute;
+    background:url(novaImagem5.png);
+    background-size: cover;
+    transform:  rotateY(-180deg);
+    transition: all 0.8s linear;
+    transform-origin: left;
+    transition-delay: 0s;
+    z-index:2;
+    visibility: hidden;
+}
+
+.dohover:hover ~ .teste2 ~ .teste3 ~ .teste4 ~ .teste5{
+   transform: perspective(800px) rotateX(0deg);
+    transition-delay: 1s;
+    visibility: visible;
+    left: 59%;
+}
+
+/*.content-align{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+}*/
+
+
+/* Profile container */
+
+  
+  /* Profile sidebar */
+  .profile-sidebar {
+    margin: 10px;
+    /*padding: 20px 30px 30px 30px;*/
+    background: white;
+    z-index:-100;
+    border: 3px solid black;
+  }
+  
+  .profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 0% !important;
+    -moz-border-radius: 0% !important;
+    border-radius: 0% !important;
+  }
+  
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-usertitle-name {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5DBAAF;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 5px;
+    margin-right: 5px;
+  }
+  
+  .profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+  }
+      
+  .profile-usermenu {
+    margin-top: 30px;
+  }
+  
+  .profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .profile-usermenu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+  }
+  
+  .profile-usermenu ul li.active {
+    border-bottom: none;
+  }
+  
+  .profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+  }
+  
+  /* Profile Content */
+  .profile-content {
+    padding: 10px;
+    min-height: 640px;
+    margin:auto;
+    z-index: -10;
+  }
+
+  .dohover{
+    height: 1000px;
+    width: 420px ;
+    margin:auto;
+    z-index: 100;
+    position: relative;
+  }
